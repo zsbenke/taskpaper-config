@@ -1,13 +1,6 @@
-# taskpaper-config
-Merlin's TaskPaper Configuration Files plus a Sample Document
-
 ## What This Is
 
 These are some of my significant TaskPaper files. They might be useful in helping you get started with being a TaskPaper power user with a minimum of fussing and fiddling.
-
-###  📔 Sample Document
-
-**`sample.taskpaper`** is a makebelieve, redacted version of a typical TaskPaper document as I would use it.
 
 ### 📂 Config Files
 
@@ -20,13 +13,8 @@ One is a Style Sheet (**`style.less`**), while the others provide "Set It and Fo
 
 ## To Install Config Files
 
-1. **PLEASE** proceed carefully, know what you're doing, and please make backups before you do or change anything
-1. The files in this `TaskPaper` folder go hierarchically in:  
-    `/Users/YOURNAME/Library/Application Support/TaskPaper/`
-3. Thusly:
-   * `/Users/YOURNAME/Library/Application Support/TaskPaper/Configurations/searches.taskpaper`
-   * `/Users/YOURNAME/Library/Application Support/TaskPaper/Configurations/tags.taskpaper`
+**PLEASE** proceed carefully, know what you're doing, and please make backups before you do or change anything
+
+Run `./install.sh` to override your existing TaskPaper config.
 
 -----
-
-<!-- 2022-03-16 21:51 -->
