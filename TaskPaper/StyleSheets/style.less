@@ -31,106 +31,60 @@
 }
 
 item[data-type="note"] {
-  font-style: italic;
-  font-size: smaller;
-  color: gray;
+  font-style: normal;
 }
 item[data-type="project"] {
   font-weight: bold;
 }
 
-
 // BEGIN Tag Styles
+// // Office!
+// item[data-office] {
+//   color: #eee;
+//   & > run[content] {
+//     background-color: #eee;
+//     color: blue;
+//   }
+// }
+//
+// // Errands!
+// item[data-errands] {
+//   & > run[content] {
+//   color: purple;
+//   background-color: #ccc;
+//   }
+// }
+//
+//
+// // Buyonline!
+// item[data-buyonline] {
+//   & > run[content] {
+//   color: fuchsia;
+//   background-color: #ccc;
+//   }
+// }
+//
+//
+// // Internet!
+// item[data-net] {
+//   & > run[content] {
+//   color: purple;
+//   background-color: #ccc;
+//   }
+// }
+//
+// // iOS!
+// item[data-ios] {
+//   & > run[content] {
+//   color: maroon;
+//   background-color: #ccc;
+//   }
+// }
+//
+// // END Tag Styles
 
-// House!
-item[data-house] {
-  & > run[content] {
-    background-color: #eee;
-    color: orange;
-  }
-}
-
-// Office! 
-item[data-office] {
-  color: #eee;
-  & > run[content] {
-    background-color: #eee;
-    color: blue;
-  }
-}
-
-// Errands! 
-item[data-errands] {
-  & > run[content] {
-  color: purple;
-  background-color: #ccc;
-  }
-}
-
-
-// Buyonline! 
-item[data-buyonline] {
-  & > run[content] {
-  color: fuchsia;
-  background-color: #ccc;
-  }
-}
-
-
-// Internet! 
-item[data-net] {
-  & > run[content] {
-  color: purple;
-  background-color: #ccc;
-  }
-}
-
-// iOS! 
-item[data-ios] {
-  & > run[content] {
-  color: maroon;
-  background-color: #ccc;
-  }
-}
-
-
-
-
-
-// END Tag Styles
-
-
-
-
-// priority + focus
-item[data-i],
-item[data-ii],
-item[data-iii],
-item[data-focus] {
-  & > run[content] {
-    background-color: #bf363b;
-    color: #ffffff;
-  }
-}
-item[data-i][data-done],
-item[data-ii][data-done],
-item[data-iii][data-done] {
-  & > run[content] {
-    text-strikethrough-color: #ffffff;
-  }
-}
-item[data-ii],
-item[data-iii],
-item[data-focus] {
-  & > run[content] {
-    font-weight: bold;
-  }
-}
-item[data-iii] {
-  font-size: @user-font-size * 1.25;
-  line-height-multiple: 1.5;
-}
-item[data-today] {
+// Formatting
+item[data-todo] {
   color: #605c2b;
   background-color: mix(#e9d92b, #ffffff, @nbmix);
   & > run[tag] {
@@ -147,7 +101,7 @@ item > run[tag="data-fb"][tag],
 item > run[tag="data-fi"][tag],
 item > run[tag="data-fu"][tag],
 item > run[tag="data-fr"][tag],
-item > run[tag="data-fm"][tag],
+item > run[tag="data-fc"][tag],
 item > run[tag="data-fs"][tag],
 item > run[tag="data-fl"][tag],
 item > run[tag="data-fh"][tag],
@@ -175,8 +129,8 @@ item[data-fr=""] > run[content],
 item > run[tag="data-fr"][tagvalue] {
   font-family: Georgia, "Times New Roman", serif;
 }
-item[data-fm=""] > run[content],
-item > run[tag="data-fm"][tagvalue] {
+item[data-fc=""] > run[content],
+item > run[tag="data-fc"][tagvalue] {
   font-family: Consolas, Menlo, monospace;
 }
 item[data-fs=""],
@@ -198,7 +152,7 @@ item > run[tag="data-fb"][tagvalue],
 item > run[tag="data-fi"][tagvalue],
 item > run[tag="data-fu"][tagvalue],
 item > run[tag="data-fr"][tagvalue],
-item > run[tag="data-fm"][tagvalue],
+item > run[tag="data-fc"][tagvalue],
 item > run[tag="data-fs"][tagvalue],
 item > run[tag="data-fl"][tagvalue],
 item > run[tag="data-fh"][tagvalue] {
