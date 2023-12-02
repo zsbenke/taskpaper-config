@@ -25,7 +25,7 @@ for name in *; do
   else
     if [ "$name" != 'install.sh' ]; then
       echo "Creating $target"
-      cp -r "$PWD/$name" "$target"
+      cp -f -r "$PWD/$name" "$target"
     fi
   fi
 done
